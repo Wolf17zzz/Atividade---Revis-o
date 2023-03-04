@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade 1</title>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+        <script>
+            // Aguarda o carregamento da página
+            $(function(){
+                // Cria um ouvinte para os cliques no botão enviar
+                $('#btn_enviar').on('click', function(){
+                    let valorCampo = $('#caixa').val(); // Pega o valor do campo caixa
+                    alert("Olá " + valorCampo);
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <div>
+            <label for="caixa">Digite seu nome: </label>
+        </div>
+            <input type="text" id="caixa">
+        <div>
+            <button id="btn_enviar" type="submit">enviar</button>
+        </div>
+
+    </body>
+</html>

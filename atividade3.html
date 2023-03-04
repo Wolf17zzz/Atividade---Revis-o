@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade 3</title>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+   
+        <script>
+            $(function(){
+                $('#btn_confirmar').on('click', function(){
+                    let senha = $('#senha').val() 
+                    if(senha != 'cereja'){
+                        alert("Senha Incorreta!");
+                    }else{
+                        window.location.href = './atividade2.html'
+                    }
+                });
+            })
+        </script>
+
+    </head>
+    <body>
+        <div>
+            <label for="senha">Digite a senha: </label>
+        </div>
+            <input type="text" id="senha">
+        <div>
+            <button id="btn_confirmar" type="submit">Confirmar</button>
+        </div>
+
+    </body>
+</html>

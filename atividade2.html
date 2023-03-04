@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade 2</title>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    
+        <script>
+            // Aguarda o carregamento da página
+            $(function(){
+                $('#btn_vermelho').on('click', function(){
+                    $('body').css('background-color', 'red')  
+                });
+                $('#btn_azul').on('click', function(){
+                    $('body').css('background-color', 'blue') 
+                })
+                $('#btn_verde').on('click', function(){
+                    $('body').css('background-color', 'green') 
+                });
+                $('#btn_amarelo').on('click', function(){
+                    $('body').css('background-color', 'yellow')           
+                });
+            });
+        </script>
+    
+    </head>
+    <body>
+        <button id="btn_vermelho" type="submit">Vermelho</button>
+        <button id="btn_azul" type="submit">Azul</button>
+        <button id="btn_verde" type="submit">Verde</button>
+        <button id="btn_amarelo" type="submit">Amarelo</button>
+
+    </body>
+</html>
